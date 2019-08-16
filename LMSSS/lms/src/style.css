@@ -1,0 +1,17 @@
+
+html{
+    background-color: aqua;
+}
+#aas{
+    width: 160px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    background-color: black;
+
+}
+input{
+    width: 160px;
+}

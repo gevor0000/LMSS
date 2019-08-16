@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        if(sessionStorage.getItem("Username")==null){
+            window.location.replace("index.html");
+        }
+    </script>
+    <script type="text/javascript" src="Classes.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div id="addBook">
+        <input type="text" placeholder="Book Author" id="bookAuthor"/>
+        <br>
+        <br>
+        <input type="text" placeholder="Book Name" id="bookName"/>
+        <br>
+        <br>
+        <input type="button" value="Add Book" onclick="addBook()"/>
+        <br>
+        <br>
+    </div>
+
+    <div id="removeBook">
+
+    </div>
+
+    <div id="addUser">
+        <input type="text" id="Username" placeholder="Username">
+        <br>
+        <br>
+        <input type="password" id="Password" placeholder="Password">
+        <br>
+        <br>
+        <input type="text" id ="Roll" placeholder="Role">
+        <br>
+        <br>
+        <input type="submit" onclick="Register()" value="Add User">
+        <br>
+        <br>
+    </div>
+
+    <div id="deleteUser">
+        <input type="text" id="User" placeholder="Username">
+        <br>
+        <br>
+        <input type="button" value="Delete User" onclick="removeUser()">
+        <br>
+        <br>
+    </div>
+
+    <div id="takeBook">
+
+    </div>
+<div id="viewBooks">
+    <table id = "bookTable">
+
+    </table>
+</div>
+    <input type="button" value="Logout" onclick="logout()">
+</body>
+<script>display();
+viewBooks();</script>
+</html>
